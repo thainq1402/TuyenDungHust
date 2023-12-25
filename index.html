@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phân tích tuyển dụng</title>
     <style>
         h1 {
@@ -31,9 +33,15 @@
             color: #FFFFFF;
             transition: transform 0.3s;
             cursor: pointer;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
         }
         nav ul li a:hover, nav ul li button:hover {
             transform: scale(1.1);
+            background-color: #990000;
         }
         main {
             flex-grow: 1;
@@ -53,6 +61,17 @@
         }
         .additional-buttons button {
             margin: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .additional-buttons button:hover {
+            background-color: #45a049;
         }
     </style>
     <script>
@@ -70,8 +89,8 @@
     <nav>
         <ul>
             <li><a href="#" onclick="showAdditionalButtons(); return false;">Trang chủ</a></li>
-            <li><a href="#" onclick="document.getElementById('frame').src = 'https://app.powerbi.com/view?r=eyJrIjoiYzA0MGNhOGMtY2Y2Ni00NzgzLThhMjEtYTZhMDBhNGEzZWNiIiwidCI6ImE3MmM4NGVmLTAxMjQtNGVlYS1hYTU4LTU5MDBmNTBjODA1OCIsImMiOjEwfQ%3D%3D'; return false;">Dashboard tuyển dụng </a></li>
-            <li><a href="#" onclick="document.getElementById('frame').src = 'https://app.powerbi.com/view?r=eyJrIjoiODE0ZGRkM2ItOGRlMC00OTdhLWJjMmMtNGZiYjU4ZjRmM2NkIiwidCI6ImE3MmM4NGVmLTAxMjQtNGVlYS1hYTU4LTU5MDBmNTBjODA1OCIsImMiOjEwfQ%3D%3D'; return false;">Dashboard Giám sát quá trình monitoring</a></li>
+            <li><a href="#" onclick="document.getElementById('frame').src = 'https://app.powerbi.com/view?r=eyJrIjoiYzA0MGNhOGMtY2Y2Ni00NzgzLThhMjEtYTZhMDBhNGEzZWNiIiwidCI6ImE3MmM4NGVmLTAxMjQtNGVlYS1hYTU4LTU5MDBmNTBjODA1OCIsImMiOjEwfQ%3D%3D';">Dashboard tuyển dụng </a></li>
+            <li><a href="#" onclick="document.getElementById('frame').src = 'https://app.powerbi.com/view?r=eyJrIjoiODE0ZGRkM2ItOGRlMC00OTdhLWJjMmMtNGZiYjU4ZjRmM2NkIiwidCI6ImE3MmM4NGVmLTAxMjQtNGVlYS1hYTU4LTU5MDBmNTBjODA1OCIsImMiOjEwfQ%3D%3D';">Dashboard Giám sát quá trình monitoring</a></li>
         </ul>
         <ul id="additional-buttons" class="additional-buttons">
             <button onclick="document.getElementById('frame').src = 'https://app.powerbi.com/view?r=eyJrIjoiYzA0MGNhOGMtY2Y2Ni00NzgzLThhMjEtYTZhMDBhNGEzZWNiIiwidCI6ImE3MmM4NGVmLTAxMjQtNGVlYS1hYTU4LTU5MDBmNTBjODA1OCIsImMiOjEwfQ%3D%3D';">Dashboard phân tích tuyển dụng</button>
